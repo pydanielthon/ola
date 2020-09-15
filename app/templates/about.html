@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aleksandra Czerepak - profesjonalna modelka</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/core.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/elements.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'favicon.png' %}?version=4">
+  </head>
+  <body>
+    <div id="wrapper" class="container-fluid sidebar">
+      <aside id="main-sidebar" class="centered"><a href="/" class="brand"><span class="name">Aleksandra Czerepak</span><span class="title hidden-xs">Modelka</span></a>
+        <div class="responsive-nav">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="/" class="active">Home</a>
+             
+            </li>
+           
+            <li><a href="{% url 'app:about' %}">About</a>
+            </li>
+            </li>
+            <li><a href="{% url 'app:contact' %}">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div style="background-image: url({% static 'images/moje/lewahome.jpg' %});" class="bg faded"></div>
+      </aside>
+      <section class="main">
+        <div class="container mb-xl mt-xl">
+            <div class="content row">
+              <div class="col-md-offset-3 col-md-6"><img src="{% static 'images/moje/7.jpg' %}">
+                <p>Philosophy is considered a science but it is difficult to say, when one has to compare with an ordinary science, for example <a href="#">biology</a>, or chemistry. This is a question that turns into a burning problem among the scientists and linguists all over the world. Can philosophy be a science? What does philosophy operate with? It operates with categories, which can be as wide and as interchangeable as one can only imagine. Ordinary science operates with definitions, which are quite limited in their field of research. Ordinary science uses terms and laws of that very science to continue the research, uniting with the others in very rare cases. Philosophy gets into the sense of every science trying to achieve results.</p>
+                <p>We also can not call philosophy a supra-science, for it also uses hypothesis and arguments to state the opinion. But there is the obvious thing: there are now laws in philosophy and <a href="#">never will be</a>, for the science changes with the age, the needs, beliefs and requirements of the citizens. To prove your opinion, you can write the definition essay and state all the facts and arguments you know to prove one way or another. This is also a nice way to research the problem and see what the solution is. But you have to research it carefully; otherwise definition essays will not be fruitful. As all sciences philosophy has gone through its stages of development. Some scientists believe that the crib of philosophy was mythology and religion. If to see the principles of life and some primitive morals stated in some myths we may see that the statement is quite true and philosophy still continues to develop out of social beliefs and ideas. Philosophy is a science which is obligatory learned by every college student in order for him to establish his own philosophy of life. It is quite exciting to find answers to ever existing questions: who am I? What do I know? What can I know? What am I destined to do? Here is one more interesting observation. You can see that all famous philosophers were researching other science fields also. For example, Freud, Yung, Kafka and others were doing research in linguistics and social sciences. Their numerous creations are the pride of human history for they revealed some secrets that remained undiscovered for a long time before their great contributions.</p>
+              </div>
+            </div>
+          </div>      </section>
+    </div>
+    <script src="{% static 'js/vendor.js' %}"></script>
+    <script src="{% static 'js/functions.js' %}"></script>
+    <script src="{% static 'modules/tera-lightbox/tera-lightbox.js' %}"></script>
+  </body>
+</html>
